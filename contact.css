@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* NAVIGATION BAR */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", san serif;
+}
+
+.hero{
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0.7),rgba(0, 0, 0, 0.5)),url(images/contactus.webp);
+    background-position: center;
+    background-size: cover;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero nav a .logo{
+    width: 200px;
+
+}
+
+.hero nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.hero nav ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+.hero nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    display: block;
+    background: white;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.hero nav ul li a:hover::after{
+    width: 100%;
+}
+
+.content{
+    text-align: center;
+    color: white;  
+}
+
+.content h1{
+    font-size: 120px;
+}
+
+.content p{
+    font-size: 25px;
+}
+
+.content span{
+    font-weight: 800;
+
+}
+
+  
+/* ----------------------------- */
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.contact-column{
+    flex-basis: 48%;
+    margin: 30px;
+}
+
+.contact-column .leftside{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-column img{
+    width: 10%;
+    margin: 0 20px 0 0;
+}
+
+.contact-column h4{
+    font-size: 20px;
+}
+
+.contact h1{
+font-size: 30px
+}
+
+.contact p{
+    font-size: 25px;
+    font-weight: 350;
+}
+
+.contact-column  p{
+    margin: 5px 0;
+    font-size: 20px;
+    font-weight: 380;
+}
+.contact-column input, .contact-column textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+.contact-column .div2{
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.contact .labelbox{
+    width: 100%;
+}
+
+.contact .div2 input{
+    width: 10%;
+    margin: 0;
+
+}
+
+.contact-column h4{
+    margin: 5px 0 10px 0;
+}
+
+.button_main{
+border: 2px solid;
+font-size: 15px;
+background-color: transparent;
+/* margin-top: 0px; */
+padding: 10px 40px;
+color: black;
+border-radius: 6px;
+}
+
+.button_main{
+background: linear-gradient(black 0 0) var(--p, 0) / var(--p, 0) no-repeat;
+transition: .4s, background-position 0s;
+}
+
+.button_main:hover {
+--p: 100%;
+color:white;
+border-color: black;
+}
+
+.contact .row{
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    padding: 20px;
+}
+
+/* ------------ FOOTER ------------ */
+
+
+footer{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    padding: 0px 70px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-weight: 350;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+
+.foot-column p{
+    padding: 10px 0px;
+}
+
+.foot-column strong{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.column-partner h4{
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+}
+
+footer .foot-column{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .foot-column a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 15px 0px;
+}
+
+.row3 img{
+    padding: 5px 20px 0px 20px;
+    width: 150px;
+}
+
+.row3 .rolex{
+    width: 180px;
+}
+
+.row3 .piguet{
+    width: 200px;
+}
+
+footer .copyright{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media (max-width:800px){
+
+    .content h1{
+        transition: 0.2s;
+        font-size: 80px;
+    }
+    
+    .content h1 span{
+        transition: 0.2s;
+        font-size: 80px;
+    }
+    
+    .content p{
+        transition: 0.2s;
+        font-size: 22px;
+    }
+    
+    .hero nav ul li a{
+        transition: 0.2s;
+        font-size: 20px;
+    }
+    
+    .hero nav a .logo{
+        width: 150px;
+    
+    }
+
+    .contact h1{
+        text-align: center;
+    }
+
+    .contact p{
+
+        text-align: center;
+    }
+     
+    .row{
+        margin-top: 5%;
+        display: inline-block;
+        justify-content: space-evenly;
+        /* display: flex;
+        justify-content: space-evenly;
+        padding-top: 30px;
+        flex-wrap: wrap; */
+    }
+    }

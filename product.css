@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* ------------------------------------------------ */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", san serif;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero nav a .logo{
+    width: 200px;
+
+}
+
+.hero nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.hero nav ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+.hero nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    display: block;
+    background: white;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.hero nav ul li a:hover::after{
+    width: 100%;
+}
+
+.content{
+    text-align: center;
+    color: white;  
+}
+
+.content h1{
+    font-size: 120px;
+}
+
+.content p{
+    font-size: 25px;
+}
+
+.content span{
+    font-weight: 800;
+
+}
+
+.background{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media(min-aspect-ration : 16/9){
+    .background{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ration : 16/9){
+    .background{
+        width: auto;
+        height: 100%;
+    }
+}
+
+/* ------------------------------------------------ */
+/* catalogue */
+
+.rounded{
+    border-top: 2px solid rgba(0, 0, 0, 0.4);
+    margin: 20px;
+}
+
+.collection{
+    text-align: center;
+    padding: 30px;
+    
+}
+
+.coll{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+    margin: 15px 0;
+    transition: 0.4s;
+}
+
+.coll:hover{
+    transform: scale(1.05);
+    /* margin: 5px 0px; */
+}
+.coll img{
+    width: 100px;
+    
+}
+
+.coll .rolex-watch{
+    width:110px;
+    height: 180px;
+
+}
+
+.coll .rolex-watch1{
+    width:150px;
+    height: 200px;
+    margin-top: -20px;
+}
+
+.coll .rolex-watch2{
+    width:100px;
+    height: 180px;
+
+}
+
+.coll .tag-watch{
+    width:110px;
+    height: 181px;
+
+}
+
+.coll .omega-watch{
+    height: 181px;
+    width: 130px;
+}
+
+.coll .ap-watch{
+    height: 181px;
+    width: 130px;
+}
+
+.coll .ap-watch1{
+    height: 181px;
+    width: 110px;
+}
+
+.collection h1{ /* FEATURED */
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.collection .subtext{   /* UNDER FEATURED */
+    font-size: 25px;
+    font-weight: 350;
+}
+
+.coll .desc{
+    text-align: center;
+    padding: 20px 5px;
+
+}
+
+.coll .desc span{
+    font-size: 15px;
+}
+
+.coll .desc h5{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.coll .desc h6{
+    font-weight: 350;
+    font-size: 25px;
+    padding-top: 20px;
+}
+
+.brand{
+    position: relative;
+}
+
+.brand .logo_coll{
+    width: 40px;
+    height: auto;
+    line-height: 40px;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+
+}
+
+.collection .col-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    flex-wrap: wrap;
+}
+
+.collection a .col-button{
+    border-radius: 4px;
+    margin: 20px 20px;
+    font-size: 20px;
+    padding: 5px 15px;
+    background: linear-gradient(black 0 0) var(--p, 0) / var(--p, 0) no-repeat;
+    transition: .2s, background-position 0s;
+}
+
+.collection a .col-button:hover{
+    --p: 100%;
+    color:white;
+    border-color: black;
+}
+
+/* ------------------------------------------------ */
+/* FOOTER */
+
+footer{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    padding: 0px 70px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-weight: 350;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+
+.foot-column p{
+    padding: 10px 0px;
+}
+
+.foot-column strong{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.column-partner h4{
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+}
+
+footer .foot-column{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .foot-column a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 15px 0px;
+}
+
+.row img{
+    padding: 5px 20px 0px 20px;
+    width: 150px;
+}
+
+.row .rolex{
+    width: 180px;
+}
+
+.row .piguet{
+    width: 200px;
+}
+
+footer .copyright{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* RESPONSIVE (width <= 800px) */
+
+@media (max-width:800px){
+    .content h1{
+        transition: 0.6s;
+        font-size: 80px;
+    }
+
+    .content span{
+        transition: 0.6s;
+        font-size: 70px;
+    }
+
+    .content p{
+        transition: 0.6s;
+        font-size: 20px;
+    }
+
+    .hero nav a .logo{
+        width: 150px;
+    
+    }
+
+    .hero nav ul li a{
+        transition: 0.2s;
+        font-size: 20px;
+    }
+
+    .content .button_main{
+        transition: 0.2s;
+        border: 2px solid;
+        font-size: 25px;
+        background-color: transparent;
+        margin-top: 30px;
+        padding: 10px 40px;
+        color: white;
+        border-radius: 6px;
+    }
+
+.row2{
+    /* margin-top: 5%;
+    display: inline-block;
+    justify-content: space-evenly; */
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    flex-wrap: wrap;
+}
+
+.ser-column{
+    size: 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 15px 30px;
+    border: 1px solid black;
+}
+}
+
+/* ------------------------------------------------ */
+
+/* --------------------------------------------- */
+
+/* -------------- SCRAPPED PROJECT ------------- */
+
+/* --------------------------------------------- */
+
+/* #check{
+    display: none;
+}
+
+.coll1{
+    display: none;
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+    margin: 15px 0;
+    transition: 0.5s linear;
+}
+
+.col-container label{
+    border-radius: 4px;
+    margin: 20px 20px;
+    font-size: 20px;
+    padding: 5px 15px;
+    border: 1px solid black;
+    cursor: pointer;
+    background: linear-gradient(black 0 0) var(--p, 0) / var(--p, 0) no-repeat;
+    transition: .2s, background-position 0s;
+}
+
+.col-container label:hover{
+    --p: 100%;
+    color:white;
+    border-color: black;
+}
+
+#check:checked ~ .coll1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+    margin: 15px 0;
+}
+
+.brand img{
+    width: 100px; 
+}
+
+.coll1 .desc{
+    text-align: center;
+    padding: 20px 5px;
+
+}
+
+.coll1 .desc span{
+    font-size: 15px;
+}
+
+.coll1 .desc h6{
+    font-weight: 400;
+    font-size: 18px;
+} */
+
+
